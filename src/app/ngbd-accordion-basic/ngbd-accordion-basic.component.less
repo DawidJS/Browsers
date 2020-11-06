@@ -1,0 +1,45 @@
+@import '../../styles/var.less';
+
+:host /deep/.accordion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+:host /deep/div {
+    background-color: #ffffff;
+    width: 700px;
+    text-align: left;
+
+    &.card-header:after {
+        height: 10px;
+        width: 17px;
+        content: '';
+        background: url("../../assets/images/icon-arrow.svg");
+        display: block;
+        position: absolute;
+        right: 30px;
+        pointer-events: none;
+        top: 20px;
+        color: @color-jasny-niebieski;
+    }
+}
+
+:host /deep/button {
+    color: black !important;
+    padding: 0;
+    width: 100%;
+    text-align: left;
+    outline: none !important;
+    border: none;
+    text-decoration: none !important;
+    box-shadow: none !important;
+
+}
+
+:host /deep/.card {
+    border: none;
+    border-top: 1px solid @color-szarawy;
+    border-bottom: 1px solid @color-szarawy;
+}

@@ -1,0 +1,63 @@
+@import '../../styles/var.less';
+
+:host /deep/ ul {
+    margin-bottom: 40px;
+}
+
+:host /deep/ li {
+    margin-right: 15px;
+}
+
+:host /deep/ a {
+    color: @color-szarawy;
+    border: none;
+}
+
+:host /deep/ .nav-link.active {
+    border: none;
+    border-bottom: 4px solid @color-jasny-czerwony;
+}
+
+
+
+
+
+.ng-tabset-basic-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.simple-bookmarking {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .simple-left-side {
+        width: 50%;
+    }
+
+    .simple-right-side {
+        width: 50%;
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: @color-szarawy;
+            width: 500px;
+            line-height: 22px;
+            margin-bottom: 25px;
+        }
+
+        button {
+            background-color: @color-jasny-niebieski;
+            padding: 15px 35px;
+            color: #fff;
+            border-radius: 4px;
+            border: none;
+        }
+    }
+}
