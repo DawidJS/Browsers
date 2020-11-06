@@ -82,8 +82,10 @@
             <p>35.000+ ALREADY JOINED</p>
             <h2>Stay up-todate-with what <br> we're doing</h2>
             <div class="email-send">
-                <input class="email-input" type="email" placeholder="Enter yor email address">
-                <button type="submit">Contact Us</button>
+                <form>
+                    <input ng-model="email.text" required class="email-input" type="email" placeholder="Enter yor email address">
+                    <button type="submit">Contact Us</button>
+                </form>
             </div>
         </section>
         <!--! footer -->
